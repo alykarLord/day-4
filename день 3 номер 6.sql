@@ -1,0 +1,1 @@
+SELECT piz1.name AS pizza_name, piz2.pizzeria_name AS pizzeria_name_1, piz1.pizzeria_name AS pizzeria_name_2, piz1.price FROM pizza piz1 JOIN pizza piz2 ON piz1.name = piz2.name AND piz1.price = piz2.price WHERE piz1.pizzeria_name <> piz2.pizzeria_name ORDER BY piz1.name;

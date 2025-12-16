@@ -1,0 +1,1 @@
+SELECT piz.name AS pizza_name, o.price, piz2.name AS pizzeria_name FROM pizza piz JOIN pizzeria piz2 ON piz.pizzeria_id = piz2.id WHERE piz.id NOT IN (SELECT pizza_id FROM person_order) ORDER BY piz.name, o.price;

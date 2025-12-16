@@ -1,0 +1,1 @@
+INSERT INTO menu (id, name, price, pizzeria_id) VALUES ((SELECT COALESCE(MAX(id), 0) + 1 FROM menu), 'sicilian pizza', 900, (SELECT id FROM pizzeria WHERE name = 'Dominos'));
